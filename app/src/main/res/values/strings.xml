@@ -10,8 +10,13 @@
         <item>Horror</item>
         <item>Comedy</item>
         <item>Action</item>
-        <item>SciFi</item>
+        <item>Sci-Fi</item>
         <item>Animation</item>
+        <item>Drama</item>
+        <item>Adventure</item>
+        <item>Fantasy</item>
+        <item>Action</item>
+        <item>Thriller</item>
     </string-array>
 
     <string-array name="array_cities">
