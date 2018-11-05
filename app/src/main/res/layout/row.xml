@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
     android:padding="4dp">
 
     <LinearLayout
@@ -16,7 +17,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imageViewMov"
                 android:layout_width="120dp"
                 android:layout_height="160dp"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
@@ -28,23 +29,28 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textViewNameMov"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
-                android:textSize="18sp" />
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textViewDirectorMov"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="@android:color/darker_gray" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textViewGenreMov"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="@android:color/darker_gray" />
         </LinearLayout>
     </LinearLayout>
 
@@ -54,17 +60,22 @@
         android:orientation="vertical">
 
         <RatingBar
-            android:id="@+id/ratingBar"
-            android:layout_width="match_parent"
+            android:id="@+id/ratingBarMov"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:numStars="5"
-            android:stepSize=".5" />
+            android:stepSize=".5"
+            android:focusable="false"
+            android:isIndicator="true"
+            />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewDescMov"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:clickable="false"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray" />
 </LinearLayout>
