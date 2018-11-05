@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_500x750"
+    android:background="@drawable/test"
     android:orientation="vertical"
     android:focusable="false"
 
     tools:context=".SecondPage">
 
 
-
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:focusable="false"
-        />
+        android:background="@drawable/test"
+        android:focusable="false" />
 </LinearLayout>
